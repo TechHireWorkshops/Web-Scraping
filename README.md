@@ -45,7 +45,7 @@ and import it with
 	
 Now that we have our parse, let's parse!
 
-	soup = BeautifulSoup(page, 'html.parser')
+	soup = BeautifulSoup(page.content, 'html.parser')
 
 creates a parsed version of the webpage, and we can view a nicer version of our HTML now, using `print(soup.prettify())`.  The first argument in the soup constructor is the HTML to parse, and the second is the parser. html.parse is native to Beautiful Soup, but it can use others.  Beautiful Soup can also be used to search and navigate our HTML. We can use things like
 
